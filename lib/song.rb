@@ -15,7 +15,6 @@ class Song
   def self.new_by_name(name)
     tune = Song.new
     tune.name = name
-    tune.save
     tune
   end
 
@@ -24,7 +23,6 @@ class Song
     song = Song.new
     song.artist_name = path_parts.first.strip
     song.name = path_parts[1].strip
-    song.save
     song
   end
 
